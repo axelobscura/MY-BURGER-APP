@@ -13,9 +13,11 @@
 }
 
 @media (min-width: 700px){
+  /*
   .SideDrawer {
     display: none;
   }
+  */
 }
 
 .Open {
@@ -23,7 +25,7 @@
 }
 
 .Close {
-  transform: translateY(-100%);
+  transform: translateX(-100%);
 }
 
 .Logo {
