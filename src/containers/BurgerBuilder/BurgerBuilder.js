@@ -36,6 +36,14 @@ class BurgerBuilder extends Component {
     loading: false
   }
 
+  componentDidMount(){
+    axios.get('https://react-my-burger-21aea.firebaseio.com/ingredients.json')
+      .then(response => {
+        console.log(response);
+        this.setState({ingredients: response.data})
+      })
+  }
+
   addIngredientHandler = (type) => {
     const oldCount = this.state.ingredients[type];
     const updatedCount = oldCount + 1;
