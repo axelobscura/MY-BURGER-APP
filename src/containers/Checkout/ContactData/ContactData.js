@@ -49,16 +49,17 @@ class ContactData extends Component {
           },
           value: ''
         },
+        deliveryMethod: {
+          elementType: 'select',
+          elementConfig: {
+            options: [
+              {value: 'fastest', displayValue: 'Fastest'},
+              {value: 'cheapest', displayValue: 'Cheapest'}
+            ]
+          }
+        },
       },
-      deliveryMethod: {
-        elementType: 'select',
-        elementConfig: {
-          options: [
-            {value: 'fastest', displayValue: 'Fastest'},
-            {value: 'cheapest', displayValue: 'Cheapest'}
-          ]
-        }
-      },
+      
       loading: false
   }
 
